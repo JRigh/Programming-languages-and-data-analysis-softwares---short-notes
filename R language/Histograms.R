@@ -10,7 +10,7 @@ ggplot(iris, aes(x = Petal.Length)) +
   geom_histogram( color = 'black', fill = 'darkred', binwidth = 0.3) +
   labs(title = 'Histogram',
        subtitle = 'iris dataset',
-       y="count", x="Sepal Width") +
+       y="count", x="Petal Length") +
   theme(axis.text=element_text(size=8),
         axis.title=element_text(size=8),
         plot.subtitle=element_text(size=10, face="italic", color="darkred"),
@@ -22,7 +22,7 @@ ggplot(iris, aes(x = Petal.Length, color = Species, fill = Species)) +
   geom_histogram( color = 'black', binwidth = 0.3, alpha = 0.4) +
   labs(title = 'Histogram by group',
        subtitle = 'iris dataset',
-       y="count", x="Sepal Width") +
+       y="count", x="Petal Length") +
   theme(axis.text=element_text(size=8),
         axis.title=element_text(size=8),
         plot.subtitle=element_text(size=10, face="italic", color="darkred"),
